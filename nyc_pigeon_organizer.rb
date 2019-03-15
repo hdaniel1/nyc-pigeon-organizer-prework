@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
         if attribute1 == attribute
         info.each do |info, pigeon|
           if pigeon.include?(name)
-             new_hash[name][pigeon_atts] << info
+             new_hash[name][pigeon_atts] << info.to_s
           end
         end
         end
